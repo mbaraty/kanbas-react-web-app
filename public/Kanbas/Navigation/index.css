@@ -28,3 +28,11 @@
   font-size: 2em;
   margin-bottom: 5px;
 }
+
+.wd-kanbas-navigation li.wd-active a i.fa-user-circle-o{
+  color: gray;
+}
+
+.wd-kanbas-navigation li a i.fa-user-circle-o{
+  color: white;
+}
