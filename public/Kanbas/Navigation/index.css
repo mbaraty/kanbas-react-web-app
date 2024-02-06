@@ -6,6 +6,8 @@
   width: 80px;
   font-size: 14px;
   font-weight: 400;
+ scroll-behavior: initial;
+  height: 100%
 }
 .wd-kanbas-navigation li {
   padding: 10px;
