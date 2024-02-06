@@ -1,165 +1,199 @@
 <!DOCTYPE html>
 <html>
-  <head>  <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="/Kanbas/styles.css" />
-    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" /></head>
-  <body>
-    <table>
-      <tbody>
-        <tr style="vertical-align: top">
-          <td>
-            <ul class="wd-kanbas-navigation">
-              <li>
-                <a href="http://northeastern.edu">
-                  <i class="fa fa-university"></i> <br />
-                  N
-                </a>
-              </li>
-              <li>
-                <a href="/Kanbas/Account/Profile/screen.html"
-                  ><i class="fa fa-user-circle-o"></i>
-                  Account</a
-                >
-              </li>
-              <li>
-                <a href="/Kanbas/Dashboard/screen.html">
-                  <i class="fa fa-tachometer"></i> Dashboard</a
-                >
-              </li>
-              <li  class="wd-active">
-                <a href="/Kanbas/Courses/Home/screen.html">
-                  <i class="fa fa-book"></i><br />
-                  Courses</a
-                >
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-calendar"></i> Calendar</a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-print"></i><br />
-                  Inbox</a
-                >
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-clock-o"></i> <br />
-                  History</a
-                >
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-television"></i> <br />
-                  Studio</a
-                >
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-share-square"></i> <br />
-                  Commons</a
-                >
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-question-circle-o"></i> <br />
-                  Help</a
-                >
-              </li>
-            </ul>
-          </td>
+	<head>
+		<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="/Kanbas/styles.css" />
+		<link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+		<link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+	</head>
 
-          <td>
-            <ul>
-              <li>
-                <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Modules/screen.html"> Modules</a>
-              </li>
-              <li><a href="/Kanbas/Courses/Piazza/index.html"> Piazza</a></li>
-              <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
-              <li>
-                <a href="/Kanbas/Courses/Assignments/screen.html">
-                  Assignments</a
-                >
-              </li>
-              <li><a href="#">Quizzes</a></li>
-              <li><a href="#">Grades</a></li>
-              <li><a href="#">People</a></li>
-              <li><a href="#">Panopto Video</a></li>
-              <li><a href="#">Discussions</a></li>
-              <li><a href="#">Announcements</a></li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Files</a></li>
-              <li><a href="#">Rubrics</a></li>
-              <li><a href="#">Outcomes</a></li>
-              <li><a href="#">Collaborations</a></li>
-              <li><a href="#">Syllabus</a></li>
-              <li><a href="#">Settings</a></li>
-            </ul>
-          </td>
-          <td>
-            <select>
-              <option value="#">Gradebook</option>
-            </select>
-            <input type="button" value="Import" />
-            <select>
-              <option value="#">Export</option>
-            </select>
-            <input type="button" value="Configure" />
-        
-            <h3>Student Names</h3>
-            <input type="text" placeholder="Search Students" />
-            <h3>Assignment Names</h3>
-            <input type="text" placeholder="Search Assignments" />
-            <br /><br />
-            <input type="button" value="Apply Filters" />
-        
-            <table>
-              <thead>
-                <td>Student Name</td>
-                <td>Assignment 1<br />Out of 100</td>
-                <td>Assignment 2<br />Out of 100</td>
-                <td>Assignment 3<br />Out of 100</td>
-                <td>Assignment 4<br />Out of 100</td>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Student A</td>
-                  <td>100</td>
-                  <td>99</td>
-                  <td>98</td>
-                  <td><input type="text" value="97" /></td>
-                </tr>
-        
-                <tr>
-                  <td>Student B</td>
-                  <td>88</td>
-                  <td>78</td>
-                  <td><input type="text" value="85" /></td>
-                  <td>92</td>
-                </tr>
-        
-                <tr>
-                  <td>Student C</td>
-                  <td>70</td>
-                  <td><input type="text" value="80" /></td>
-                  <td>94</td>
-                  <td>78</td>
-                </tr>
-        
-                <tr>
-                  <td>Student D</td>
-                  <td><input type="text" value="97" /></td>
-                  <td>85</td>
-                  <td>91</td>
-                  <td>83</td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
+	<body>
+		<table>
+			<tbody>
+				<tr style="vertical-align: top">
+					<td>
+						<ul class="wd-kanbas-navigation">
+							<li>
+								<a href="http://northeastern.edu">
+									<i class="fa fa-university"></i>
+									<br />
+									N
+								</a>
+							</li>
+							<li>
+								<a href="/Kanbas/Account/Profile/screen.html">
+									<i class="fa fa-user-circle-o"></i>
+									Account
+								</a>
+							</li>
+							<li>
+								<a href="/Kanbas/Dashboard/screen.html">
+									<i class="fa fa-tachometer"></i>
+									Dashboard
+								</a>
+							</li>
+							<li class="wd-active">
+								<a href="/Kanbas/Courses/Home/screen.html">
+									<i class="fa fa-book"></i>
+									<br />
+									Courses
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-calendar"></i>
+									Calendar
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-print"></i>
+									<br />
+									Inbox
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-clock-o"></i>
+									<br />
+									History
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-television"></i>
+									<br />
+									Studio
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-share-square"></i>
+									<br />
+									Commons
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-question-circle-o"></i>
+									<br />
+									Help
+								</a>
+							</li>
+						</ul>
+					</td>
+
+					<td>
+						<ul class="wd-navigation">
+							<li>
+								<a href="/Kanbas/Courses/Home/screen.html">Home</a>
+							</li>
+							<li>
+								<a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
+							</li>
+							<li><a href="http://piazza.com">Piazza</a></li>
+							<li><a href="#">Zoom</a></li>
+							<li>
+								<a href="/Kanbas/Courses/Assignments/screen.html">
+									Assignments
+								</a>
+							</li>
+							<li><a href="#">Quizzes</a></li>
+							<li class="wd-active">
+								<a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
+							</li>
+							<li><a href="#">People</a></li>
+							<li><a href="#">Panopto Video</a></li>
+							<li><a href="#">Discussions</a></li>
+							<li><a href="#">Announcements</a></li>
+							<li><a href="#">Pages</a></li>
+							<li><a href="#">Files</a></li>
+							<li><a href="#">Rubrics</a></li>
+							<li><a href="#">Outcomes</a></li>
+							<li><a href="#">Collaborations</a></li>
+							<li><a href="#">Syllabus</a></li>
+							<li><a href="#">Settings</a></li>
+						</ul>
+					</td>
+					<td>
+						<select>
+							<option value="#">Gradebook</option>
+						</select>
+						<input type="button" value="Import" />
+						<select>
+							<option value="#">Export</option>
+						</select>
+						<input type="button" value="Configure" />
+
+						<h3>Student Names</h3>
+						<input type="text" placeholder="Search Students" />
+						<h3>Assignment Names</h3>
+						<input type="text" placeholder="Search Assignments" />
+						<br />
+						<br />
+						<input type="button" value="Apply Filters" />
+
+						<table>
+							<thead>
+								<td>Student Name</td>
+								<td>
+									Assignment 1
+									<br />
+									Out of 100
+								</td>
+								<td>
+									Assignment 2
+									<br />
+									Out of 100
+								</td>
+								<td>
+									Assignment 3
+									<br />
+									Out of 100
+								</td>
+								<td>
+									Assignment 4
+									<br />
+									Out of 100
+								</td>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Student A</td>
+									<td>100</td>
+									<td>99</td>
+									<td>98</td>
+									<td><input type="text" value="97" /></td>
+								</tr>
+
+								<tr>
+									<td>Student B</td>
+									<td>88</td>
+									<td>78</td>
+									<td><input type="text" value="85" /></td>
+									<td>92</td>
+								</tr>
+
+								<tr>
+									<td>Student C</td>
+									<td>70</td>
+									<td><input type="text" value="80" /></td>
+									<td>94</td>
+									<td>78</td>
+								</tr>
+
+								<tr>
+									<td>Student D</td>
+									<td><input type="text" value="97" /></td>
+									<td>85</td>
+									<td>91</td>
+									<td>83</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
 </html>
