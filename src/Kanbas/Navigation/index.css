@@ -6,36 +6,31 @@
   width: 80px;
   font-size: 14px;
   font-weight: 400;
- scroll-behavior: initial;
+  scroll-behavior: initial;
   height: 100%;
-  justify-content: center ;
 }
+
 .wd-kanbas-navigation li {
   padding: 10px;
   margin-bottom: 10px;
   font-size: 0.8em;
   text-align: center;
 }
+
 .wd-kanbas-navigation li.wd-active {
   background-color: white;
 }
-.wd-kanbas-navigation li.wd-active a {
-  color: red;
+
+.wd-kanbas-navigation li.wd-active a,
+.wd-kanbas-navigation li.wd-active a i {
+  color: red; /* Active link text and icon color */
 }
+
 .wd-kanbas-navigation a {
-  color: white;
+  color: white; /* Sets link text color to white */
   text-decoration: none;
 }
-.wd-kanbas-navigation a i {
-  color: red;
-  font-size: 2em;
-  margin-bottom: 5px;
-}
 
-.wd-kanbas-navigation li.wd-active a i.fa-user-circle-o{
-  color: gray;
-}
-
-.wd-kanbas-navigation li a i.fa-user-circle-o{
-  color: white;
+.wd-kanbas-navigation .fs-2 {
+  color: red; /* Sets all icons color to red */
 }
