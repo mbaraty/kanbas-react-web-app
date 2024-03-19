@@ -1,4 +1,4 @@
-import { courses } from "../Database";
+import db from "../Database";
 import {
 	Navigate,
 	Route,
@@ -15,7 +15,7 @@ import { FaBars, FaChevronUp } from "react-icons/fa6";
 import { FaChevronCircleUp, FaChevronRight } from "react-icons/fa";
 import Assignments from "./Assignments";
 
-function Courses() {
+function Courses({ courses }: { courses: any[] }) {
 	const { courseId } = useParams();
 	const course = courses.find((course) => course._id === courseId);
 	const location = useLocation();
