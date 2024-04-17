@@ -6,13 +6,14 @@ import { useEffect, useState } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
+import Account from "./Account";
 const API_BASE = process.env.REACT_APP_API_BASE;
 
 function Kanbas() {
 	const [courses, setCourses] = useState<any[]>([]);
-	
-	  const COURSES_API = `${API_BASE}/api/courses`;
-	
+
+	const COURSES_API = `${API_BASE}/api/courses`;
+
 	const addNewCourse = async () => {
 		const response = await axios.post(COURSES_API, course);
 		setCourses([...courses, response.data]);
@@ -57,7 +58,6 @@ function Kanbas() {
 				<div style={{ flexGrow: 1 }}>
 					<Routes>
 						<Route path="/" element={<Navigate to="Dashboard" />} />
-						<Route path="Account" element={<h1>Account</h1>} />
 						<Route
 							path="Dashboard"
 							element={
@@ -71,10 +71,8 @@ function Kanbas() {
 								/>
 							}
 						/>
-						<Route
-							path="Courses/:courseId/*"
-							element={<Courses />}
-						/>
+						<Route path="Courses/:courseId/*" element={<Courses />} />
+						<Route path="/Account/*" element={<Account />} />
 					</Routes>
 				</div>
 			</div>
